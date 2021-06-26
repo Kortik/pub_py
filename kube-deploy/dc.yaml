@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hw-py
+spec:
+  replicas: 1
+  revisionHistoryLimit: 3
+  selector:
+    matchLabels:
+      app: hw-py
+  template:
+    metadata:
+      labels:
+        app: hw-py
+    spec:
+      containers:
+      - image: registry.hub.docker.com/k0rt1k/hola:latest
+        name: hola
+        ports:
+        - containerPort: 8000
