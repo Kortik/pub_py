@@ -16,5 +16,6 @@ spec:
       containers:
       - image: registry.hub.docker.com/k0rt1k/hola:latest
         name: hola
+        imagePullPolicy: Always
         ports:
         - containerPort: 8000
