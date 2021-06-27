@@ -20,7 +20,7 @@ class HelloRequestHandler(BaseHTTPRequestHandler):
             </head>
             <body>
                 <h1>Hello, World!</h1>
-                <p>... Here we are! New Version!!!qqqasdcdxas</p>
+                <p>... Here we are! New Version!!!qqqasdscdxas</p>
             </body>
             </html>
         ''')
